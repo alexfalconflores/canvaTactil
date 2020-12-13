@@ -1,4 +1,5 @@
-document.addEventListener("mousedown", presionarMouse);
+var start = mobile ? "touchstart" : "mousedown";
+document.addEventListener(start, presionarMouse);
 document.addEventListener("mouseup", soltarMouse);
 document.addEventListener("mousemove", dibujarMouse);
 
